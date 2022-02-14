@@ -1,8 +1,9 @@
 <a href='/drones/create'>Create a new Drone</a>
 
 <h2>Available drones</h2>
-
+<div class="bg outDiv">
 {{#each drones}}
+<div class="bg2 centerDiv">
   <h3>Name: {{name}}</h3>
   <p>Propellers: {{propellers}}</p>
   <p>maxSpeed: {{maxSpeed}}</p>
@@ -10,6 +11,6 @@
   <form action='/drones/{{_id}}/delete' method='post'>
     <button>Delete</button>
   </form>
-
+</div>
 {{/each}}
-
+</div>
